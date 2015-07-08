@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+  form(action="/login" method="post")
+    label Log In
+    p
+    input(type="text" name="user_name" placeholder="username")
+    p
+    input(type="password" name="password" placeholder="password")
+    p
+    input(type="submit" value="login")
