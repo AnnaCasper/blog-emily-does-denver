@@ -1,0 +1,14 @@
+table {
+  width: 100%;
+
+  th {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  tr:nth-child(even){
+    background-color: #d3d3d3;
+    padding-left: 10px;
+  }
+
+}
