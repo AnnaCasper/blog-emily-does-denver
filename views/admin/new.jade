@@ -5,8 +5,8 @@ block content
   form(action="/new" method="post")
     input(type="text" name="title" placeholder="Title of Post")
     p
-    input(type="textarea" name="content" placeholder="Content of Post")
+    textarea(id="content" name="content" placeholder="Content of Post")
     p
-    input(type="submit" value="Create")  
+    input(type="submit" class="button" value="Create")  
     p
     a(href="/admin") cancel

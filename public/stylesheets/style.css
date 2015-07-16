@@ -107,7 +107,11 @@ h4 {
 
 h5, h6 {
   font-weight: 600;
-  color: #003B36; }
+  color: #E98A15; }
+
+a {
+  font-weight: bold;
+  color: #59114D; }
 
 small, .font_small {
   font-size: 0.707em; }
@@ -116,7 +120,31 @@ input {
   width: 100%;
   height: 40px;
   border: 2px solid #59114D;
-  background-color: #ECE5F0; }
+  background-color: #ECE5F0;
+  font-size: 16px; }
+
+select {
+  height: auto;
+  border: 2px solid #59114D;
+  background-color: #ECE5F0;
+  font-size: 16px;
+  margin-left: 20px;
+  color: #E98A15; }
+
+.button {
+  width: 20%;
+  color: #E98A15;
+  font-size: 20px; }
+
+.button:hover {
+  cursor: pointer; }
+
+textarea {
+  height: 400px;
+  width: 100%;
+  border: 2px solid #59114D;
+  background-color: #ECE5F0;
+  font-size: 16px; }
 
 table {
   width: 100%; }
