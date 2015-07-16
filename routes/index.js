@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
+//GET styleguide
+router.get('/styleguide', function(req, res, next){
+  res.render('styleguide');
+})
 //GET about page
 router.get('/about', function(req, res, next){
   res.render('about');

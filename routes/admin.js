@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var db = require('monk')(process.env.MONGO_URI);
-var blogCollection = db.get('blogs');
+// var db = require('monk')(process.env.MONGO_URI);
+// var blogCollection = db.get('blogs');
 
 //GET admin login page
 router.get('/login', function(req, res, next){
