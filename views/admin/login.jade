@@ -2,10 +2,11 @@ extends ../layout
 
 block content
   form(action="/admin/login" method="post")
-    label Log In
+    h3 Login
+    h5 Debbie Does Denver
     p
     input(type="text" name="user_name" placeholder="username")
     p
     input(type="password" name="password" placeholder="password")
     p
-    input(type="submit" value="login")
+    input(type="submit" class="button" value="Login")

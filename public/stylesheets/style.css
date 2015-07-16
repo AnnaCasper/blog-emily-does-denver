@@ -88,7 +88,8 @@ h1, h2, h3, h4 {
   font-family: Lobster Two, serif;
   font-weight: inherit;
   line-height: 1.2;
-  color: #E98A15; }
+  color: #E98A15;
+  transform: rotate(-7deg); }
 
 h1 {
   margin-top: 0;
@@ -121,7 +122,8 @@ input {
   height: 40px;
   border: 2px solid #59114D;
   background-color: #ECE5F0;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 8px; }
 
 select {
   height: auto;
@@ -129,7 +131,7 @@ select {
   background-color: #ECE5F0;
   font-size: 16px;
   margin-left: 20px;
-  color: #E98A15; }
+  color: #003B36; }
 
 .button {
   width: 20%;
@@ -144,7 +146,8 @@ textarea {
   width: 100%;
   border: 2px solid #59114D;
   background-color: #ECE5F0;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 8px; }
 
 table {
   width: 100%; }
@@ -152,5 +155,5 @@ table {
     font-weight: bold;
     text-align: left; }
   table tr:nth-child(even) {
-    background-color: #d3d3d3;
+    background-color: rgba(0, 59, 54, 0.2);
     padding-left: 10px; }

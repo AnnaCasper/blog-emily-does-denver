@@ -4,6 +4,7 @@ input {
   border: 2px solid $purple;
   background-color: $white;
   font-size: 16px;
+  padding: 8px;
 }
 
 select {
@@ -12,7 +13,7 @@ select {
   background-color: $white;
   font-size: 16px;
   margin-left: 20px;
-  color: $gold;
+  color: $green;
 }
 
 .button {
@@ -31,4 +32,5 @@ textarea {
   border: 2px solid $purple;
   background-color: $white;
   font-size: 16px;
+  padding: 8px;
 }

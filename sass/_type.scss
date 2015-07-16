@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
   font-family: Palanquin Dark, serif;
   font-weight: inherit;
   line-height: 1.2;
-  color: $green
+  color: $green;
 }
 
 .denver {
@@ -28,6 +28,7 @@ h1, h2, h3, h4 {
   font-weight: inherit;
   line-height: 1.2;
   color: $gold;
+  transform: rotate(-7deg);
 }
 
 h1 {
