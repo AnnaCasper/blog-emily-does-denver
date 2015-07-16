@@ -67,7 +67,7 @@ html {
   font-size: 1em; }
 
 body {
-  background-color: white;
+  background-color: #ECE5F0;
   font-family: Open Sans, sans-serif;
   font-weight: 300;
   line-height: 1.45;
@@ -80,18 +80,21 @@ h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
   font-family: Palanquin Dark, serif;
   font-weight: inherit;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #003B36; }
 
 .denver {
   margin: 1.414em 0 0.5em;
   font-family: Lobster Two, serif;
   font-weight: inherit;
-  line-height: 1.2; }
+  line-height: 1.2;
+  color: #E98A15; }
 
 h1 {
   margin-top: 0;
   font-size: 3.998em;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #59114D; }
 
 h2 {
   font-size: 2.827em; }
@@ -103,14 +106,17 @@ h4 {
   font-size: 1.414em; }
 
 h5, h6 {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #003B36; }
 
 small, .font_small {
   font-size: 0.707em; }
 
 input {
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  border: 2px solid #59114D;
+  background-color: #ECE5F0; }
 
 table {
   width: 100%; }

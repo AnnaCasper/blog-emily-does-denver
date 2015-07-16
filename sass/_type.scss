@@ -5,11 +5,11 @@
 html {font-size: 1em;}
 
 body {
-  background-color: white;
+  background-color: $white;
   font-family: Open Sans, sans-serif;
   font-weight: 300;
   line-height: 1.45;
-  color: #333;
+  color: $black;
 }
 
 p {margin-bottom: 1.3em;}
@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
   font-family: Palanquin Dark, serif;
   font-weight: inherit;
   line-height: 1.2;
+  color: $green
 }
 
 .denver {
@@ -26,12 +27,14 @@ h1, h2, h3, h4 {
   font-family: Lobster Two, serif;
   font-weight: inherit;
   line-height: 1.2;
+  color: $gold;
 }
 
 h1 {
   margin-top: 0;
   font-size: 3.998em;
   font-weight: 700;
+  color: $purple;
 }
 
 h2 {font-size: 2.827em;}
@@ -40,6 +43,9 @@ h3 {font-size: 1.999em;}
 
 h4 {font-size: 1.414em;}
 
-h5, h6 {font-weight: 600}
+h5, h6 {
+  font-weight: 600;
+  color: $green;
+}
 
 small, .font_small {font-size: 0.707em;}
