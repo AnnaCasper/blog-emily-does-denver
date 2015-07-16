@@ -2,10 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url(//fonts.googleapis.com/css?family=Lobster+Two);
-@import url(//fonts.googleapis.com/css?family=Palanquin+Dark:400,700);
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(http://fonts.googleapis.com/css?family=Palanquin+Dark:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -85,12 +84,13 @@ h1, h2, h3, h4 {
   color: #003B36; }
 
 .denver {
-  margin: 1.414em 0 0.5em;
+  margin: 0.8em 0 0.5em;
   font-family: Lobster Two, serif;
   font-weight: inherit;
-  line-height: 1.2;
   color: #E98A15;
-  transform: rotate(-7deg); }
+  line-height: 0;
+  transform: rotate(-10deg);
+  position: absolute; }
 
 h1 {
   margin-top: 0;

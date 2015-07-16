@@ -23,12 +23,13 @@ h1, h2, h3, h4 {
 }
 
 .denver {
-  margin: 1.414em 0 0.5em;
+  margin: .8em 0 0.5em;
   font-family: Lobster Two, serif;
   font-weight: inherit;
-  line-height: 1.2;
   color: $gold;
-  transform: rotate(-7deg);
+  line-height:0;
+  transform:rotate(-10deg);
+  position: absolute;
 }
 
 h1 {
