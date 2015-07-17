@@ -18,7 +18,7 @@ ol {
 
 .post {
   background-color: rgba($green, .4);
-  width: 100%;
+  width: 80%;
   height: 600px;
   overflow: auto;
   color: $white;
@@ -27,6 +27,7 @@ ol {
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
+  float: right;
   h3 {
     color: $purple;
   }
