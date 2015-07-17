@@ -63,6 +63,23 @@ ol {
   list-style-type: decimal;
   list-style-position: inside; }
 
+.post {
+  background-color: rgba(0, 59, 54, 0.4);
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  color: #ECE5F0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px; }
+  .post h3 {
+    color: #59114D; }
+
+#about {
+  float: right; }
+
 html {
   font-size: 1em; }
 
@@ -82,6 +99,10 @@ h1, h2, h3, h4 {
   font-weight: inherit;
   line-height: 1.2;
   color: #003B36; }
+
+.does {
+  font-family: Open Sans, sans-serif;
+  font-weight: 100; }
 
 .denver {
   margin: 0.8em 0 0.5em;
@@ -114,6 +135,13 @@ h5, h6 {
 a {
   font-weight: bold;
   color: #59114D; }
+
+#post {
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  line-height: 1.45;
+  color: #ECE5F0;
+  font-size: 16px; }
 
 small, .font_small {
   font-size: 0.707em; }
