@@ -64,6 +64,7 @@ ol {
   list-style-position: inside; }
 
 .post {
+  display: inline-block;
   background-color: rgba(0, 59, 54, 0.35);
   width: 94%;
   height: 600px;
@@ -100,8 +101,12 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-.line {
-  border-left: 2px solid #59114D; }
+.footer {
+  position: relative;
+  clear: both;
+  padding-top: 30px; }
+  .footer .older {
+    float: right; }
 
 html {
   font-size: 1em; }
