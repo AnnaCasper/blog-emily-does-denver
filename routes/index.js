@@ -15,4 +15,9 @@ router.post('/about', function(req, res, next){
   res.render('about');
 });
 
+//GET home page
+router.post('/home', function(req, res, next){
+  res.redirect('/');
+})
+
 module.exports = router;

@@ -18,7 +18,7 @@ ol {
 
 .post {
   background-color: rgba($green, .35);
-  width: 80%;
+  width: 94%;
   height: 600px;
   overflow: auto;
   color: $white;
@@ -28,6 +28,21 @@ ol {
   padding-bottom: 20px;
   border-radius: 10px;
   float: right;
+  margin: 0 auto;
+  h5 {
+    font-weight: 600;
+    color: $purple;
+  }
+}
+
+.about {
+  background-color: rgba($green, .35);
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  color: $white;
+  padding: 30px;
+  border-radius: 10px;
   h5 {
     font-weight: 600;
     color: $purple;
@@ -35,10 +50,15 @@ ol {
 }
 
 #about {
-  float:right;
+  display: inline;
+  float: left;
 }
 
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.line {
+  border-left: 2px solid $purple;
 }

@@ -65,7 +65,7 @@ ol {
 
 .post {
   background-color: rgba(0, 59, 54, 0.35);
-  width: 80%;
+  width: 94%;
   height: 600px;
   overflow: auto;
   color: #ECE5F0;
@@ -74,17 +74,34 @@ ol {
   padding-top: 0px;
   padding-bottom: 20px;
   border-radius: 10px;
-  float: right; }
+  float: right;
+  margin: 0 auto; }
   .post h5 {
     font-weight: 600;
     color: #59114D; }
 
+.about {
+  background-color: rgba(0, 59, 54, 0.35);
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  color: #ECE5F0;
+  padding: 30px;
+  border-radius: 10px; }
+  .about h5 {
+    font-weight: 600;
+    color: #59114D; }
+
 #about {
-  float: right; }
+  display: inline;
+  float: left; }
 
 hr {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+.line {
+  border-left: 2px solid #59114D; }
 
 html {
   font-size: 1em; }
@@ -168,10 +185,11 @@ select {
   color: #003B36; }
 
 .button {
+  float: right;
   width: 20%;
   color: #E98A15;
   font-size: 20px;
-  margin: 10px; }
+  margin-bottom: 20px; }
 
 .button:hover {
   cursor: pointer; }
@@ -207,3 +225,12 @@ table {
   width: 100%;
   height: 300px;
   opacity: 0.2; }
+
+.about-img {
+  width: 30%;
+  opacity: 0.7;
+  display: inline;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px; }
