@@ -38,7 +38,8 @@ ol {
 
 .about {
   background-color: rgba($green, .35);
-  width: 100%;
+  width: 94%;
+  margin: 0 auto;
   height: 600px;
   overflow: auto;
   color: $white;
@@ -63,8 +64,12 @@ hr {
 .footer {
   position: relative;
   clear: both;
-  padding-top: 30px;
+  .email{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
   .older {
     float: right;
+    padding-top: 30px;
   }
 }

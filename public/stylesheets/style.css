@@ -83,7 +83,8 @@ ol {
 
 .about {
   background-color: rgba(0, 59, 54, 0.35);
-  width: 100%;
+  width: 94%;
+  margin: 0 auto;
   height: 600px;
   overflow: auto;
   color: #ECE5F0;
@@ -103,10 +104,13 @@ hr {
 
 .footer {
   position: relative;
-  clear: both;
-  padding-top: 30px; }
+  clear: both; }
+  .footer .email {
+    padding-top: 10px;
+    padding-left: 10px; }
   .footer .older {
-    float: right; }
+    float: right;
+    padding-top: 30px; }
 
 html {
   font-size: 1em; }
