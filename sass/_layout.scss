@@ -1,7 +1,7 @@
 body {
   padding-left: 240px;
   padding-right: 240px;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 100px;
   margin: 0 auto;
 }
@@ -24,11 +24,12 @@ ol {
   color: $white;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 20px;
   border-radius: 10px;
   float: right;
-  h3 {
+  h5 {
+    font-weight: 600;
     color: $purple;
   }
 }
