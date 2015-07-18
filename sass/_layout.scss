@@ -17,7 +17,7 @@ ol {
 }
 
 .post {
-  background-color: rgba($green, .4);
+  background-color: rgba($green, .35);
   width: 80%;
   height: 600px;
   overflow: auto;
@@ -36,4 +36,9 @@ ol {
 
 #about {
   float:right;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

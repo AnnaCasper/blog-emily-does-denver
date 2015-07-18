@@ -64,7 +64,7 @@ ol {
   list-style-position: inside; }
 
 .post {
-  background-color: rgba(0, 59, 54, 0.4);
+  background-color: rgba(0, 59, 54, 0.35);
   width: 80%;
   height: 600px;
   overflow: auto;
@@ -81,6 +81,10 @@ ol {
 
 #about {
   float: right; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 html {
   font-size: 1em; }
