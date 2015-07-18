@@ -1,10 +1,12 @@
 extends layout
 
 block content
+  img(src="../images/BackstretchSkyline.jpg" class="header")
   h1
      | Debbie <span class="does">Does</span> <span class="denver">Denver</span>
   p
-  a(href="/about" id="about") About
+  form(action='/about' method="post")
+    input(type="submit" class="button" id="about" value="About") 
   p
   div.post
     h3 This is an example of heading 6

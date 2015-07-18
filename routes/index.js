@@ -11,7 +11,7 @@ router.get('/styleguide', function(req, res, next){
   res.render('styleguide');
 })
 //GET about page
-router.get('/about', function(req, res, next){
+router.post('/about', function(req, res, next){
   res.render('about');
 });
 

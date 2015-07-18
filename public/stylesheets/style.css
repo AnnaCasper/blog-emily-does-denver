@@ -65,7 +65,7 @@ ol {
 
 .post {
   background-color: rgba(0, 59, 54, 0.4);
-  width: 100%;
+  width: 80%;
   height: 600px;
   overflow: auto;
   color: #ECE5F0;
@@ -73,7 +73,8 @@ ol {
   padding-right: 30px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  float: right; }
   .post h3 {
     color: #59114D; }
 
@@ -165,7 +166,8 @@ select {
 .button {
   width: 20%;
   color: #E98A15;
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 10px; }
 
 .button:hover {
   cursor: pointer; }
