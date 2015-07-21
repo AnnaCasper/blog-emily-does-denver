@@ -40,4 +40,9 @@ router.get('/edit', function(req, res, next){
   res.render('admin/show');
 });
 
+//GET logout
+router.get('/logout', function(req, res, next){
+  res.render('admin/login');
+})
+
 module.exports = router;
