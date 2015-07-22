@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-// var db = require('monk')(process.env.MONGO_URI);
-// var blogCollection = db.get('blogs');
+var db = require('monk')(process.env.MONGOLAB_URI);
+var blogCollection = db.get('blog');
 
 //GET admin login page
 router.get('/login', function(req, res, next){
@@ -26,9 +26,11 @@ router.get('/new', function(req, res, next){
 //POST new blog
 router.post('/new', function(req, res, next){
   blogCollection.insert({title: req.body.title,
-    content: req.body.content});
-  res.redirect('/admin');
-})
+    date: req.body.date,
+    content: req.body.content}, function(err, data){
+      res.redirect('/admin');
+    });
+});
 
 //GET show page
 router.get('/show', function(req, res, next){
