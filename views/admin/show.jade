@@ -2,4 +2,19 @@ extends ../layout
 
 block content
   h4 Click on a post you would like to edit:
-  
+  p
+  table
+    thead
+      th Blog Name
+      th Date Posted
+      th Delete Post
+    tbody
+    for blog in blogs
+      tr
+      td 
+        a(href="/admin/" + blog._id + "/edit") #{blog.title}
+      td= blog.date
+      td
+        form(action= blog._id + "/delete" method="post")
+          input(type="submit" value="Delete")
+  a(href="/admin") Home
