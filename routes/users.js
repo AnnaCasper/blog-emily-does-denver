@@ -1,5 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var authorization = require('express-authorization');
+var bcrypt = require('bcryptjs');
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {

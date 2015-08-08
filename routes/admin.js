@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var db = require('monk')(process.env.MONGOLAB_URI);
-var blogCollection = db.get('blog');
+var blogCollection = db.get('blogs');
+var userCollection = db.get('users')
+
+var validations = require("../lib/javascripts/validations");
 
 //GET admin login page
 router.get('/login', function(req, res, next){
@@ -17,6 +20,46 @@ router.get('/', function(req, res, next){
 router.post('/login', function(req, res, next){
   res.redirect('/admin');
 });
+
+//GET sign up page
+router.get('/signup', function(req, res, next){
+  res.render('admin/signup')
+});
+
+//POST new user
+router.post('/signup', function(req, res, next){
+  var upperCase = req.body.email.toUpperCase();
+  var email = upperCase.replace(" ", "");
+  var uniqueEmail = validations.existingEmail(email, function(duplicateError){
+    var errors = validations.validateSignUp(
+      req.body.user_name,
+      email,
+      req.body.password,
+      req.body.confirm,
+      duplicateError);
+    if (errors.length === 0){
+      var hash = bcrypt.hashSync(req.body.password, 8);
+      userCollection.insert({
+        user_name: req.body.user_name,
+        profile_pic: "",
+        email: email,
+        password: hash,
+        challenge_ids: [],
+        scores: []
+        });
+      userCollection.findOne({email: email}, function(err, data){
+        res.cookie('currentUser', data._id);
+        res.redirect('/challenges');
+      });
+    } else {
+        res.render('users/new', {
+          errors: errors,
+          user_name: req.body.user_name,
+          email: email
+          });
+      };
+  })
+})
 
 //GET new post page
 router.get('/new', function(req, res, next){
