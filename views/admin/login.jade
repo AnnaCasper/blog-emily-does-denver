@@ -2,12 +2,14 @@ extends ../layout
 
 block content
   form(action="/admin/login" method="post")
+    if errors 
+      p.error= error
     h3 Login
     h5 Debbie Does Denver
     p
-    input(type="text" name="user_name" placeholder="username")
+    input(type="text" name="email" placeholder="Email")
     p
-    input(type="password" name="password" placeholder="password")
+    input(type="password" name="password" placeholder="Password")
     p
     input(type="submit" class="button" value="Login")
   a(href="/admin/signup") Sign Up
