@@ -140,7 +140,7 @@ router.post('/:id/edit', function(req, res, next){
 })
 
 //POST delete
-router.post('/:id/delete', function(req, res, next){  
+router.post('/:id/delete', function(req, res, next){
   if(req.cookies.currentUser){
     blogCollection.findOne({_id: req.params.id}, function(err, blog){
       res.render('admin/edit', {blog: blog});
@@ -149,7 +149,5 @@ router.post('/:id/delete', function(req, res, next){
     res.redirect('/admin/login')
   }
 });
-
-
 
 module.exports = router;

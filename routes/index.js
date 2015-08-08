@@ -1,9 +1,14 @@
 var express = require('express');
 var router = express.Router();
+var db = require('monk')(process.env.MONGOLAB_URI);
+var blogCollection = db.get('blogs');
+var userCollection = db.get('users');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  blogCollection.find( { $query: {}, $orderby: { _id : -1 } }, function(err, blogs){
+    res.render('index', {blogs: blogs});
+  })
 });
 
 //GET styleguide
